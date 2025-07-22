@@ -5,6 +5,8 @@ adicionar trabalho voluntario
 {%endblock%}
 
 {%block content%}
+<h1>Adicinar trabalho</h1>
+
 <form action="{{url_for('add_work')}}" method="POST">
     <label for="work_name">nome do trabalho</label>
     <input type="text" id="work_name" name="work_name" placeholder="Insira um nome para o seu trabalho">
@@ -18,7 +20,7 @@ adicionar trabalho voluntario
 
         <label for="work_adress">endereço do trabalho</label>
     <input type="text" id="work_adress" name="work_adress" placeholder="Insira o local do seu trabalho">
-
+<img class="image" src="{{url_for('static', filename='images/woman image.png')}}">
 
         <button type="submit" class="new-work">Enviar trabalho</button>
         </form>
