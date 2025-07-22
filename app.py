@@ -37,10 +37,10 @@ def add_work():
         id,
         work_date,
         work_decription,
-        work_adress,
-    ]
+        work_adress
+        ]
 
-    with open("works.csv", mode="a", encoding="utf-8") as csv_file:
+    with open("works.csv", mode="a", encoding="utf-8", newline="") as csv_file:
         writer=csv.writer(csv_file)
         writer.writerow(new_work)
 
