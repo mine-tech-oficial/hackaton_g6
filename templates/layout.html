@@ -7,6 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{%block title%}<!--Nome do site-->{%endblock%}</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+
     {%block head%}
     {%endblock%}
 </head>
@@ -14,17 +27,17 @@
 <body>
     <header>
         <!--código do header-->
-         <div class="logo">
-                <img src="/static/images/Green Modern Marketing Logo (2) 1.svg" alt="logo icon">
-                <h2>Voluntar</h2>
-           </div>
+        <div class="logo">
+            <img src="/static/images/Green Modern Marketing Logo (2) 1.svg" alt="logo icon">
+            <h2>Voluntar</h2>
+        </div>
 
-           <nav>
-               <div class="buttons">
-                    <button>Ver Mapa</button>
-                    <button>Página do Contratado</button>
-               </div> 
-           </nav>
+        <nav>
+            <div class="buttons">
+                <button>Ver Mapa</button>
+                <button>Página do Contratado</button>
+            </div>
+        </nav>
     </header>
 
     <main>
