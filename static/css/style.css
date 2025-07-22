@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: #ECEDB0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAD8A4;
+    height: 44px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 12px;
+}
+
+.buttons button{
+    background-color: #F68537;
+    border-radius: 12px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+}
+
+.page{
+    background-color: #feffda;
+    gap: 20px;
+    width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 50px;
+    height: 80vh;
+    border-radius: 12px;
+    margin-bottom: 70px;
+}
+
+.perfil{
+    margin: 50px;
+}
+
+.foto-perfil img{
+    border-radius: 20px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.foto-perfil{
+    display: flex;
+}
+
+.foto-perfil h2{
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.informacoes-perfil {
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+.informacoes-perfil p{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.informacoes-perfil .title{
+    font-size: 24px;
+}
+
