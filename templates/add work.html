@@ -1,17 +1,17 @@
 {%extends 'layout.html'%}
 
 {%block title%}
-    adicionar trabalho voluntario
-    {%endblock%}
+adicionar trabalho voluntario
+{%endblock%}
 
-    {%block content%}
-        <form action="{{url_for('add_work')}}"  method="POST">
-            <label for="work_name">nome do trabalho</label>
-            <input type="text" id="work_name" name="work_name" placeholder="Insira um nome para o seu trabalho">
+{%block content%}
+<form action="{{url_for('add_work')}}" method="POST">
+    <label for="work_name">nome do trabalho</label>
+    <input type="text" id="work_name" name="work_name" placeholder="Insira um nome para o seu trabalho">
 
-            label for="work_date">data do trabalho</label>
-            <input type="date" id="work_date" name="work_date" placeholder="Insira a data do seu trabalho">
+    label for="work_date">data do trabalho</label>
+    <input type="date" id="work_date" name="work_date" placeholder="Insira a data do seu trabalho">
 
-            label for="work_description">descrição do trabalho</label>
-            <textarea id="work_description" name="work_description" placeholder="Insira uma descrição para o seu trabalho">
+    label for="work_description">descrição do trabalho</label>
+    <textarea id="work_description" name="work_description" placeholder="Insira uma descrição para o seu trabalho">
     {%endblock%}
