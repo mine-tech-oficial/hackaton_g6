@@ -13,7 +13,7 @@ def index():
     return  render_template('add work.html')
 
 @app.post('/add_work')
-def add_new_work():
+def add_work():
     id=1
     with open("works.csv", mode="r", encoding="utf-8") as csv_file:
         reader=list(csv.reader(csv_file))
@@ -29,13 +29,15 @@ def add_new_work():
 
     work_date = work_date.strftime("%m/%d/%Y")
 
-    work_decription=request.form.get('workwork_description')
+    work_decription=request.form.get('work_description')
+    work_adress=request.form.get('work_adress')
+
 
     new_work=[
         id,
         work_date,
         work_decription,
-
+        work_adress,
     ]
 
     with open("works.csv", mode="a", encoding="utf-8") as csv_file:

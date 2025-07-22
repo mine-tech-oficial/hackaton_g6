@@ -1,2 +1,3 @@
-id, name, description, address
-1, exemplo de trabalho, um trabalho para exemplificar as funcionalidades do site, USP de São Carlos
+id,name,description,date,address
+1,exemplo de trabalho,um trabalho para exemplificar as funcionalidades do site,20/06/2026,USP de São Carlos
+
