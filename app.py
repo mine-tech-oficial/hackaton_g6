@@ -46,5 +46,28 @@ def add_work():
 
     return redirect(url_for('index'))
 
+@app.route("/work/<int:id>")
+def work(id):
+    work_place = {}
+    with open("works.csv", mode="r", encoding="utf-8") as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        for row in csv_reader:
+            if int(row["id"]) == id:
+                work_place = row
+    print(work_place)
+
+    return render_template("work.html", work_place=work_place)
+
+@app.route("/map")
+def map():
+    work_places = []
+    with open("works.csv", mode="r", encoding="utf-8") as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        for row in csv_reader:
+            work_places.append(row)
+    print(work_places)
+
+    return render_template("map.html", work_places=work_places)
+
 if __name__ == "__main__":
     app.run(debug=True)
