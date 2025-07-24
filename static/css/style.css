@@ -101,7 +101,7 @@ footer {
     gap: 10px;
     width: 225px;
     margin-left: 10px;
-    border-radius: 12px;
+    border-radius: 16px;
     transition: font-size 0.3s ease-in-out;
 }
 
