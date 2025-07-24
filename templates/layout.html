@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{%block title%}<!--Nome do site-->{%endblock%}</title>
+    <title>{%block title%}Voluntar{%endblock%}</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 
     <style>
@@ -26,15 +26,16 @@
 
 <body>
     <header>
-        <!--código do header-->
         <div class="logo">
-            <img src="/static/images/Green Modern Marketing Logo (2) 1.svg" alt="logo icon">
+            <img src="{{url_for('static',filename='images/Green Modern Marketing Logo aux.svg')}}" alt="logo icon">
             <h2>Voluntar</h2>
         </div>
 
         <nav>
             <div class="buttons">
+                <a href="url_for('map')">
                 <button>Ver Mapa</button>
+                </a>
                 <button>Página do Contratado</button>
             </div>
         </nav>
@@ -46,7 +47,6 @@
 
 
     <footer>
-        <!--código do footer-->
         <p>&copy; Todos os direitos reservados </p>
     </footer>
 </body>
