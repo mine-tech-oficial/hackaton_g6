@@ -54,7 +54,8 @@ def add_work():
 
     work_date = work_date.strftime("%m/%d/%Y")
 
-    work_decription=request.form.get('work_description')
+    work_description=request.form.get('work_description')
+    work_requirements=request.form.get('work_requirements')
     work_address=request.form.get('work_adress')
 
     image = request.files.get('image')
@@ -73,7 +74,8 @@ def add_work():
     new_work=[
         id,
         work_name,
-        work_decription,
+        work_description,
+        work_requirements,
         work_date,
         work_address,
         image_path
