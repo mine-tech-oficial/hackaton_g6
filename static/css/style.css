@@ -15,19 +15,13 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #EAD8A4;
-    height: 44px;
+    height: 50px;
 
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 40px;
-    margin-left: 10px;
+    height: 100%;
+    padding: 8px 10px;
     border-radius: 12px;
 }
 
@@ -203,35 +197,35 @@ footer {
     width: 100%;
 }
 
-.add-container{
+.add-container {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
 }
 
-.add-container h1{
+.add-container h1 {
     text-align: center;
     margin-top: 20px;
 }
 
-.form-informations{
+.form-informations {
     margin: 30px;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
 
 }
 
-.form-group label{
+.form-group label {
     font-size: 20px;
-        margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .form-group input,
-.form-group textarea{
+.form-group textarea {
     border: none;
     padding: 16px;
     border-radius: 12px;
@@ -239,7 +233,7 @@ footer {
     margin-bottom: 18px;
 }
 
-.new-work{  
+.new-work {
     display: block;
     margin: 0 auto;
     margin-top: 50px;
