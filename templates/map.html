@@ -49,7 +49,7 @@
         L.marker([result.y, result.x]).addTo(map)
             .bindPopup(`
             <h2>{{ work_place.name }}</h2>
-            <img src="{{ work_place.image }}" alt="{{ work_place.name }}">
+            <img src="{{ work_place.image }}" alt="{{ work_place.name }}" class="popup_image">
             <p>{{ work_place.description }}</p>
             <a href='/work/{{ work_place.id }}'>Mais detalhes</a>`);
     });
