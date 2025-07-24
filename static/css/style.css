@@ -25,6 +25,11 @@ header {
     gap: 10px;
 }
 
+.logo a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo img {
     width: 40px;
     margin-left: 10px;
@@ -39,6 +44,11 @@ header {
     cursor: pointer;
     margin: 10px;
 
+}
+
+.buttons a{
+    text-decoration: none;
+    color: inherit;
 }
 
 footer {

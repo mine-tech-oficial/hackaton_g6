@@ -28,16 +28,23 @@
 <body>
     <header>
         <div class="logo">
+            <a href="{{url_for('show_index')}}">
             <img src="{{url_for('static',filename='images/Green Modern Marketing Logo aux.svg')}}" alt="logo icon">
+            </a>
             <h2>Voluntar</h2>
         </div>
 
         <nav>
             <div class="buttons">
-                <a href="url_for('map')">
+                <a href="{{url_for('map')}}">
                 <button>Ver Mapa</button>
                 </a>
-                <button>Página do Contratado</button>
+                 <a href="{{url_for('works')}}">
+                <button>Trabalhos disponiveis</button>
+                 </a>
+                 <a href="{{url_for('add_work')}}">
+                <button>Adicionar trabalho</button>
+                </a>
             </div>
         </nav>
     </header>
