@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% if failed %}
+<form></form>
+{% else %}
+<form method="post" action="{{ url_for('sign_up') }}">
+    <input type="text" id="username">
+    <input type="password" id="password">
+</form>
+{% endif %}
+
+{% endblock %}
