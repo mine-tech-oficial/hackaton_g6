@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     background-color: #ECEDB0;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,33 +19,35 @@ header{
 
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo img{
+.logo img {
     width: 40px;
     margin-left: 10px;
     border-radius: 12px;
 }
 
-.buttons button{
+.buttons button {
     background-color: #F68537;
     border-radius: 12px;
     padding: 8px;
     border: none;
     cursor: pointer;
     margin: 10px;
-    
+
 }
 
+footer {
 footer {
     background-color: white;
     text-align: center;
 }
 
+.page {
 .page {
     background-color: #feffda;
     gap: 20px;
@@ -59,9 +61,11 @@ footer {
 }
 
 .perfil {
+.perfil {
     margin: 50px;
 }
 
+.foto-perfil img {
 .foto-perfil img {
     border-radius: 20px;
     height: 100px;
@@ -70,11 +74,11 @@ footer {
 
 }
 
-.foto-perfil{
+.foto-perfil {
     display: flex;
 }
 
-.foto-perfil h2{
+.foto-perfil h2 {
     margin-left: 50px;
     margin-top: 60px;
 }
@@ -85,37 +89,38 @@ footer {
 }
 
 .informacoes-perfil p {
+.informacoes-perfil p {
     font-size: 20px;
     margin-bottom: 8px;
 }
 
-.informacoes-perfil .title{
+.informacoes-perfil .title {
     font-size: 24px;
 }
 
 
 
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo img{
+.logo img {
     width: 40px;
     margin-left: 10px;
     border-radius: 12px;
 }
 
-.buttons button{
+.buttons button {
     background-color: #F68537;
     border-radius: 12px;
     padding: 8px;
     border: none;
     cursor: pointer;
     margin: 10px;
-    
+
 }
 
 .cards_container {
@@ -126,8 +131,10 @@ footer {
     flex-wrap: wrap;
     row-gap: 30px;
     /* Define um espaço maior entre as linhas */
+    row-gap: 30px;
+    /* Define um espaço maior entre as linhas */
     column-gap: 30px;
-    
+
 }
 
 .cards_container h3 {
@@ -157,8 +164,8 @@ footer {
     padding-left: 30px;
     padding-right: 10px;
     margin-top: 10px;
-    
-    
+
+
 }
 
 .card_information {
@@ -187,11 +194,13 @@ footer {
 
 .cards img {
     border-radius: 16px;
-
-
 }
 
-footer{
+.popup_image {
+    width: 100%;
+}
+
+footer {
     background-color: white;
     text-align: center;
     position: fixed;

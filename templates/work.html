@@ -1,38 +1,9 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-
-<div class="pesquisa">
-    <label for="palestras"></label>
-    <img src="../static/images/lupa.svg" class="search-icon">
-    <select name="palestras" id="palestras" class="custom-select">
-        <option value="">Filtrar por...</option>
-        <option value={{}}>Ensino</option>
-        <option value={{}}>Babá</option>
-        <option value={{}}>Vender</option>
-
-    </select>
-
-</div>
-<div class="trabalhos">
-
-
-    <div class="cards_container">
-        <div class="cards">
-            <img src="https://placehold.co/140x150" alt={{}} class="card_image">
-            <h3>titulo</h3>
-
-
-            <div class="card_information">                                
-                <p><b>Local: </b> Rua da Alameda, 76, Cidade da Jaca</p>
-                <p><b>Empregador: </b> Paulo Bitaraes</p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<h1>{{work_place.name}}</h1>
-<h2>{{work_place.address}}</h2>
-<p>{{work_place.description}}</p>
-{%endblock%}
+<h1>{{ work_place.name }}</h1>
+<h2>{{ work_place.address }}</h2>
+<p><b>Data: </b>{{ work_place.date }}</p>
+<img src="{{ work_place.image }}" alt="{{ work_place.name }}">
+<p>{{ work_place.description }}</p>
+{% endblock %}

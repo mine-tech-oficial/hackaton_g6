@@ -5,22 +5,36 @@ adicionar trabalho voluntario
 {%endblock%}
 
 {%block content%}
-<h1>Adicinar trabalho</h1>
+<div class="add-container">
+            <h1>Adicionar trabalho</h1>
 
-<form action="{{url_for('add_work')}}" method="POST">
-    <label for="work_name">nome do trabalho</label>
-    <input type="text" id="work_name" name="work_name" placeholder="Insira um nome para o seu trabalho">
+            <div class="form-informations">
+                <form action="{{url_for('add_work')}}" method="POST">
+                    <div class="form-group">
+                        <form action="{{url_for('add_work')}}" method="POST">
+                        <label for="work_name">Nome do Trabalho</label>
+                        <input type="text" id="work_name" name="work_name" placeholder="Insira um nome para o seu trabalho">
+                    </div>
 
-    <label for="work_date">data do trabalho</label>
-    <input type="date" id="work_date" name="work_date" placeholder="Insira a data do seu trabalho">
+                    <div class="form-group">
+                        <label for="work_date">Data do Trabalho</label>
+                        <input type="date" id="work_date" name="work_date" placeholder="Insira a data do seu trabalho">
+                    </div>
 
-    <label for="work_description">descrição do trabalho</label>
-    <textarea id="work_description" name="work_description" rows="5" placeholder="Insira uma descrição para o seu trabalho">
-        </textarea>
+                    <div class="form-group">
+                        <label for="work_description">Descrição do Trabalho</label>
+                        <textarea id="work_description" name="work_description" rows="5" placeholder="Insira uma descrição para o seu trabalho">
+                        </textarea>
+                    </div>
 
-        <label for="work_adress">endereço do trabalho</label>
-    <input type="text" id="work_adress" name="work_adress" placeholder="Insira o local do seu trabalho">
-        <button type="submit" class="new-work">Enviar trabalho</button>
+                    <div class="form-group">
+                        <label for="work_adress">Endereço do Trabalho</label>
+                        <input type="text" id="work_adress" name="work_adress" placeholder="Insira o local do seu trabalho">
+                    </div>
+
+                    <button type="submit" class="new-work"><strong>ENVIAR TRABALHO</strong></button>
+            </div>
+        </div>
         </form>
-        
+
 {%endblock%}

@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="pesquisa">
+    <label for="palestras"></label>
+    <img src="../static/images/lupa.svg" class="search-icon">
+    <select name="palestras" id="palestras" class="custom-select">
+        <option value="">Filtrar por...</option>
+        <option value="">Ensino</option>
+        <option value="">Babá</option>
+        <option value="">Vender</option>
+
+    </select>
+
+</div>
+
+<div class="trabalhos">
+    {% for work_place in work_places %}
+    <div class="cards_container">
+        <div class="cards">
+            <img src="{{ work_place.image }}" alt="{{ work_place.name }}" class="card_image">
+            <h3>{{ work_place.name }}</h3>
+            <div class="card_information">
+                <p><b>Local: </b>{{ work_place.address }}</p>
+                <p><b>Data: </b>{{ work_place.date }}</p>
+                <p>{{ work_place.description }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
