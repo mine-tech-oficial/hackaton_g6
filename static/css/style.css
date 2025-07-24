@@ -202,3 +202,52 @@ footer {
     padding: 10px;
     width: 100%;
 }
+
+.add-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.add-container h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-informations{
+    margin: 30px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.form-group label{
+    font-size: 20px;
+        margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea{
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.new-work{  
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    width: 45%;
+    background-color: #F68537;
+    color: black;
+    font-size: 20px;
+}
