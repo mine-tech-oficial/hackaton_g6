@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{%block content%}
+<div class="main-image">
+    <img src="{{url_for('static',filename='images/Green Modern Marketing Logo.png')}}" alt="Imagem decorativa">
+</div>
+
+<div class="index-section">
+    <p>Se você sonha em aplicar pra fora, fazer um intercâmbio, potencialiazar seu currículo ou se apenas gosta de ajudar, ou ainda se deseja trabalhadores voluntários para seu projeto ou empresa o Voluntar é pra você!</p>
+<div class="index-images">
+     <img src="{{url_for('static',filename='images/USA image.png')}}" alt="Imagem decorativa" class="index-image">
+      <img src="{{url_for('static',filename='images/school image.png')}}" alt="Imagem decorativa" class="index-image">
+        <img src="{{url_for('static',filename='images/womam image.png')}}" alt="Imagem decorativa" class="index-image">
+</div>
+</div>
+{%endblock%}
