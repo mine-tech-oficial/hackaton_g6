@@ -276,9 +276,23 @@ footer {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.main-image {
-text-align: center;
+.image-and-text {
+display: flex;
 }
+
+.index-text{
+    background-color: #D6D85D;
+    min-height: 201px;
+    max-width: 331px;
+    max-height: 201px;
+    min-width: 331px;
+    margin: 70px 0px 0px -100px;
+  font-family: jaro,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:20px;
+  padding:10px;
+}
+
+
 
 .index-section {
     display: flex;
@@ -291,6 +305,7 @@ text-align: center;
     max-width: 800px;
     padding: 20px;
     margin-left: 50px;
+    font-family: Libre Caslon Display,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .index-images{
