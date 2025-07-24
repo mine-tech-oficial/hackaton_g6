@@ -46,6 +46,17 @@ def add_work():
 
     return redirect(url_for('index'))
 
+@app.route("/work")
+def works():
+    work_places = []
+    with open("works.csv", mode="r", encoding="utf-8") as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        for row in csv_reader:
+            work_places.append(row)
+    print(work_places)
+
+    return render_template("works.html", work_places=work_places)
+
 @app.route("/work/<int:id>")
 def work(id):
     work_place = {}
