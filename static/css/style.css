@@ -246,14 +246,14 @@ footer {
     font-size: 20px;
 }
 
-.page-add{
+.page-add {
     background-color: #fbfdba;
     gap: 20px;
     width: 800px;
     margin: 0 auto;
     justify-content: center;
     margin-top: 50px;
-    height: 80vh;
+    min-height: 80vh;
     border-radius: 12px;
     margin-bottom: 70px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
