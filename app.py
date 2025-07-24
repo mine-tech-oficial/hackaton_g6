@@ -128,8 +128,7 @@ def works():
     with open("works.csv", mode="r", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
-            id = row["id"]
-            work_places.append(row | { "image": url_for("static", filename = f"images/work/{id}.png")})
+            work_places.append(row)
 
     return render_template("works.html", work_places=work_places)
 
@@ -152,8 +151,7 @@ def map():
     with open("works.csv", mode="r", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
-            id = row["id"]
-            work_places.append(row | { "image": url_for("static", filename = f"images/work/{id}.png")})
+            work_places.append(row)
 
     return render_template("map.html", work_places=work_places)
 
