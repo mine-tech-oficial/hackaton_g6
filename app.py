@@ -52,8 +52,8 @@ def works():
     with open("works.csv", mode="r", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
-            work_places.append(row)
-    print(work_places)
+            id = row["id"]
+            work_places.append(row | { "image": url_for("static", filename = f"images/work/{id}.png")})
 
     return render_template("works.html", work_places=work_places)
 
@@ -64,8 +64,9 @@ def work(id):
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
             if int(row["id"]) == id:
-                work_place = row
-    print(work_place)
+                work_place = row | { "image": url_for("static", filename = f"images/work/{id}.png")}
+                break
+
 
     return render_template("work.html", work_place=work_place)
 
@@ -75,8 +76,8 @@ def map():
     with open("works.csv", mode="r", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
-            work_places.append(row)
-    print(work_places)
+            id = row["id"]
+            work_places.append(row | { "image": url_for("static", filename = f"images/work/{id}.png")})
 
     return render_template("map.html", work_places=work_places)
 

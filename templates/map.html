@@ -47,7 +47,11 @@
         const result = results[0];
 
         L.marker([result.y, result.x]).addTo(map)
-            .bindPopup('<h2>{{ work_place.name }}</h2><p>{{ work_place.description }}</p><a href="/work/{{ work_place.id }}">Mais detalhes</a>');
+            .bindPopup(`
+            <h2>{{ work_place.name }}</h2>
+            <img src="{{ work_place.image }}" alt="{{ work_place.name }}">
+            <p>{{ work_place.description }}</p>
+            <a href='/work/{{ work_place.id }}'>Mais detalhes</a>`);
     });
     {% endfor %}
 

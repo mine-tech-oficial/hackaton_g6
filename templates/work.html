@@ -1,7 +1,8 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<h1>{{work_place.name}}</h1>
-<h2>{{work_place.address}}</h2>
-<p>{{work_place.description}}</p>
+<h1>{{ work_place.name }}</h1>
+<h2>{{ work_place.address }}</h2>
+<img src="{{ work_place.image }}" alt="{{ work_place.name }}">
+<p>{{ work_place.description }}</p>
 {% endblock %}

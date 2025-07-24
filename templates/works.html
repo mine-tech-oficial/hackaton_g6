@@ -18,11 +18,11 @@
     {% for work_place in work_places %}
     <div class="cards_container">
         <div class="cards">
-            <img src="https://placehold.co/140x150" alt="" class="card_image">
-            <h3>{{work_place.name}}</h3>
+            <img src="{{ work_place.image }}" alt="{{ work_place.name }}" class="card_image">
+            <h3>{{ work_place.name }}</h3>
             <div class="card_information">
-                <p><b>Local: </b>{{work_place.address}}</p>
-                <p>{{work_place.description}}</p>
+                <p><b>Local: </b>{{ work_place.address }}</p>
+                <p>{{ work_place.description }}</p>
             </div>
         </div>
     </div>
