@@ -3,6 +3,17 @@ from datetime import datetime
 import csv 
 
 app = Flask(__name__)
+app.config.update(SESSION_COOKIE_SECURE=True, SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE='Strict')
+
+def get_next_id(file):
+    id = 1
+    with open("works.csv", mode="r", encoding="utf-8") as csv_file:
+        reader = list(csv.reader(csv_file))
+        if len(reader) > 1:
+            last_row = reader[-1]
+        if last_row:
+            id += int(last_row[0])
+    return id
 
 @app.route("/")
 def show_index():
@@ -14,13 +25,7 @@ def index():
 
 @app.post('/add_work')
 def add_work():
-    id=1
-    with open("works.csv", mode="r", encoding="utf-8") as csv_file:
-        reader=list(csv.reader(csv_file))
-        if len(reader) > 1:
-            last_row = reader[-1]
-        if last_row:
-            id += int(last_row[0])
+    id = get_next_id('works.csv')
     
     work_name=request.form.get('work_name')
 
