@@ -50,6 +50,7 @@
             .bindPopup(`
             <h2>{{ work_place.name }}</h2>
             <img src="{{ work_place.image }}" alt="{{ work_place.name }}" class="popup_image">
+            <p><b>Data: </b>{{ work_place.date }}</p>
             <p>{{ work_place.description }}</p>
             <a href='/work/{{ work_place.id }}'>Mais detalhes</a>`);
     });
