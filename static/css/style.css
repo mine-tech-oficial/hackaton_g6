@@ -42,12 +42,11 @@ header {
 }
 
 footer {
-footer {
     background-color: white;
     text-align: center;
 }
 
-.page {
+
 .page {
     background-color: #feffda;
     gap: 20px;
@@ -60,12 +59,12 @@ footer {
     margin-bottom: 70px;
 }
 
-.perfil {
+
 .perfil {
     margin: 50px;
 }
 
-.foto-perfil img {
+
 .foto-perfil img {
     border-radius: 20px;
     height: 100px;
@@ -88,7 +87,7 @@ footer {
     font-size: 23px;
 }
 
-.informacoes-perfil p {
+
 .informacoes-perfil p {
     font-size: 20px;
     margin-bottom: 8px;
