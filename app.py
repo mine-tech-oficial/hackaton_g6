@@ -54,7 +54,8 @@ def add_work():
 
     work_date = work_date.strftime("%m/%d/%Y")
 
-    work_decription=request.form.get('work_description')
+    work_description=request.form.get('work_description')
+    work_requirements=request.form.get('work_requirements')
     work_address=request.form.get('work_adress')
 
     image = request.files.get('image')
@@ -73,7 +74,8 @@ def add_work():
     new_work=[
         id,
         work_name,
-        work_decription,
+        work_description,
+        work_requirements,
         work_date,
         work_address,
         image_path
@@ -128,8 +130,7 @@ def works():
     with open("works.csv", mode="r", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
-            id = row["id"]
-            work_places.append(row | { "image": url_for("static", filename = f"images/work/{id}.png")})
+            work_places.append(row)
 
     return render_template("works.html", work_places=work_places)
 
@@ -152,8 +153,7 @@ def map():
     with open("works.csv", mode="r", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
-            id = row["id"]
-            work_places.append(row | { "image": url_for("static", filename = f"images/work/{id}.png")})
+            work_places.append(row)
 
     return render_template("map.html", work_places=work_places)
 

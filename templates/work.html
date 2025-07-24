@@ -1,9 +1,34 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<h1>{{ work_place.name }}</h1>
-<h2>{{ work_place.address }}</h2>
-<p><b>Data: </b>{{ work_place.date }}</p>
-<img src="{{ work_place.image }}" alt="{{ work_place.name }}">
-<p>{{ work_place.description }}</p>
+<div class="info_container">
+    <div class="info_top">
+        <div class="info_image_container">
+            <img src="{{ url_for('static', filename=work_place.image) }}" alt="{{ work_place.name }}"
+                class="info_image">
+        </div>
+        <div class="text_flex">
+            <div class="info_describe">
+                <p>
+                    {{ work_place.description }}
+                </p>
+            </div>
+
+            <div class="info_information">
+                <p><b>DATA: </b>{{ work_place.date }}</p>
+                <p><b>LOCAL: </b>{{ work_place.address }}</p>
+                <p><b>CARGA HORÁRIA: </b>6 horas</p>
+                <p><b>CONTRATADOR: </b>Fundação Behring</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info_requisits">
+        <p>{{ work_place.requirements }}</p>
+    </div>
+
+    <div class="inscribe_button_container">
+        <button class="inscribe_button">INSCREVER-ME</button>
+    </div>
+</div>
 {% endblock %}

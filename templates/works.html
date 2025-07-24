@@ -18,7 +18,8 @@
     {% for work_place in work_places %}
     <div class="cards_container">
         <div class="cards">
-            <img src="{{ work_place.image }}" alt="{{ work_place.name }}" class="card_image">
+            <img src="{{ url_for('static', filename=work_place.image) }}" alt="{{ work_place.name }}"
+                class="card_image">
             <h3>{{ work_place.name }}</h3>
             <div class="card_information">
                 <p><b>Local: </b>{{ work_place.address }}</p>
