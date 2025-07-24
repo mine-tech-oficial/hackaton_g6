@@ -35,6 +35,11 @@ header {
 
 }
 
+.buttons a {
+    text-decoration: none;
+    color: inherit;
+}
+
 footer {
     background-color: white;
     text-align: center;

@@ -31,10 +31,15 @@
 
         <nav>
             <div class="buttons">
-                <a href="url_for('map')">
-                    <button>Ver Mapa</button>
+                <a href="{{url_for('map')}}">
+                <button>Ver Mapa</button>
                 </a>
-                <button>Página do Contratado</button>
+                 <a href="{{url_for('works')}}">
+                <button>Trabalhos disponiveis</button>
+                 </a>
+                 <a href="{{url_for('add_work')}}">
+                <button>Adicionar trabalho</button>
+                </a>
             </div>
         </nav>
     </header>
