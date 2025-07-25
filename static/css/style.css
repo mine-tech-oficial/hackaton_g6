@@ -314,11 +314,11 @@ footer {
 
 .index-images {
     display: flex;
-    gap: 30px;
+    gap: 30px;  
 }
 
 .index-image {
-    font-size: 70px;
+    font-size: 100px;
     border-radius: 10px;
     box-shadow: 0 0 2px 1px #00000080;
 }
@@ -413,4 +413,15 @@ footer {
 
 .info_information p {
     margin-bottom: 15px;
+}
+
+.big-logo {
+    margin: 75px 0 0 250px;
+    width: 900px;
+    height: 200px;
+    box-shadow: 0 0 2px 2px #00000080;
+    border-radius: 12px;}
+
+.image-and-text{
+    margin-left: 40px;
 }
