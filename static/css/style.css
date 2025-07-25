@@ -140,13 +140,7 @@ footer {
 
 
 .cards_container {
-    /* display: flex; */
-    flex-grow: 1;
-    /* margin: 0 auto; */
-    /* max-width: 1040px; */
-    /* flex-wrap: wrap; */
-    width: 30%;
-
+    width: 20%;
 }
 
 .cards_container h3 {
@@ -158,12 +152,12 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #D6D85D;
-
-
+    text-decoration: none;
+    color: inherit;
 }
 
 .card_image {
-    padding: 7px;
+    padding: 16px;
     max-height: 292px;
 }
 
@@ -178,8 +172,6 @@ footer {
     padding-left: 30px;
     padding-right: 10px;
     margin-top: 10px;
-
-
 }
 
 .card_information {
@@ -199,6 +191,7 @@ footer {
     position: absolute;
     left: 10px;
     top: 50%;
+    margin-top: 5px;
     transform: translateY(-50%);
     pointer-events: none;
     pointer-events: none;
@@ -271,6 +264,7 @@ footer {
     background-color: #F68537;
     color: black;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .page-add {
@@ -287,19 +281,19 @@ footer {
 }
 
 .image-and-text {
-display: flex;
+    display: flex;
 }
 
-.index-text{
+.index-text {
     background-color: #D6D85D;
     min-height: 201px;
     max-width: 331px;
     max-height: 201px;
     min-width: 331px;
     margin: 70px 0px 0px -100px;
-  font-family: jaro,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:20px;
-  padding:10px;
+    font-family: jaro, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 10px;
 }
 
 
@@ -315,7 +309,7 @@ display: flex;
     max-width: 800px;
     padding: 20px;
     margin-left: 50px;
-    font-family: Libre Caslon Display,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Libre Caslon Display, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .index-images {
@@ -366,7 +360,6 @@ display: flex;
 }
 
 .inscribe_button {
-
     width: 100%;
     padding: 16px;
     background-color: #F68537;
@@ -378,7 +371,8 @@ display: flex;
     text-align: center;
     width: 500px;
     margin: auto 0;
-
+    text-decoration: none;
+    color: inherit;
 }
 
 .info_requisits {

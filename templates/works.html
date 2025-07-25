@@ -3,7 +3,7 @@
 {% block content %}
 <div class="pesquisa">
     <label for="palestras"></label>
-    <img src="../static/images/lupa.svg" class="search-icon">
+    <img src="{{ url_for('static', filename='images/lupa.svg') }}" class="search-icon">
     <select name="palestras" id="palestras" class="custom-select">
         <option value="">Filtrar por...</option>
         <option value="">Ensino</option>
@@ -17,7 +17,7 @@
 <div class="trabalhos">
     {% for work_place in work_places %}
     <div class="cards_container">
-        <div class="cards">
+        <a class="cards" href="/work/{{ work_place.id }}">
             <img src="{{ url_for('static', filename=work_place.image) }}" alt="{{ work_place.name }}"
                 class="card_image">
             <h3>{{ work_place.name }}</h3>
@@ -26,7 +26,7 @@
                 <p><b>Data: </b>{{ work_place.date }}</p>
                 <p>{{ work_place.description }}</p>
             </div>
-        </div>
+        </a>
     </div>
     {% endfor %}
 </div>
