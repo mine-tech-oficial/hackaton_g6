@@ -1,4 +1,4 @@
 id,name,description,requirements,date,address,image
-1,exemplo de trabalho,um trabalho para exemplificar as funcionalidades do site,ser legal,20/06/2026,USP de São Carlos,images/work/1.png
-2,outro exemplo de trabalho,mais um trabalho para exemplificar as funcionalidades do site,ser legal,20/06/2026,"Hotel Nacional Inn, São Carlos",images/work/2.png
-3,Voluntar,Nos ajude a testar nosso site :D,ser legal,07/25/2025,"UFSCar, São Carlos",images/work/3.png
+1,USP São Carlos,"Acolhimento dos alunos da Behring Academy, programa que reúne jovens de todo o Brasil com foco em programação, matemática, inglês e soft-skills.","Gostar de trabalhar com jovens, além de propor atividades interessantes",20/06/2026,USP de São Carlos,images/work/1.png
+2,Hotel Nacional Inn,"Preparação das refeições dos alunos da Behring Academy, programa que reúne jovens de todo o Brasil com foco em programação, matemática, inglês e soft-skills.","Gostar de trabalhar com jovens, além de saber cozinhar (bem, de preferência)",20/06/2026,"Hotel Nacional Inn, São Carlos",images/work/2.png
+3,UFSCar,"Acolhimento dos alunos da Behring Academy, programa que reúne jovens de todo o Brasil com foco em programação, matemática, inglês e soft-skills.","Gostar de trabalhar com jovens, além de propor atividades interessantes",07/25/2025,"UFSCar, São Carlos",images/work/3.png

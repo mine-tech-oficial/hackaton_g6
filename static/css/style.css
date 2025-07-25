@@ -314,7 +314,7 @@ footer {
 
 .index-images {
     display: flex;
-    gap: 30px;  
+    gap: 30px;
 }
 
 .index-image {
@@ -409,6 +409,7 @@ footer {
     align-items: flex-start;
     margin-bottom: 30px;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
 .info_information p {
@@ -420,8 +421,9 @@ footer {
     width: 900px;
     height: 200px;
     box-shadow: 0 0 2px 2px #00000080;
-    border-radius: 12px;}
+    border-radius: 12px;
+}
 
-.image-and-text{
+.image-and-text {
     margin-left: 40px;
 }
