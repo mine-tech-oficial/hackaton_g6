@@ -41,7 +41,15 @@ def show_index():
 
 @app.get('/add_work')
 def index():
-    return  render_template('add work.html')
+    return  render_template('add_work.html')
+
+@app.get('/add_subscription')
+def add_subscription():
+    return render_template('add_subscription.html')
+
+@app.post('/add_subscription')
+def subscription_form():
+    return redirect(url_for('works'))
 
 @app.post('/add_work')
 def add_work():
@@ -85,7 +93,10 @@ def add_work():
         writer=csv.writer(csv_file)
         writer.writerow(new_work)
 
-    return redirect(url_for('show_index'))
+    return redirect(url_for('works'))
+
+def delete_work():
+    pass
 
 @app.route("/sign_up")
 def sign_up():
