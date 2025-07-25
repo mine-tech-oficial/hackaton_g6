@@ -36,7 +36,7 @@ def get_next_id(file):
     return id
 
 @app.route("/")
-def show_index():
+def show_index(): 
     return render_template("index.html")
 
 @app.get('/add_work')
@@ -85,7 +85,7 @@ def add_work():
         writer=csv.writer(csv_file)
         writer.writerow(new_work)
 
-    return redirect(url_for('index'))
+    return redirect(url_for('show_index'))
 
 @app.route("/sign_up")
 def sign_up():
