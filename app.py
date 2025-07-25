@@ -93,7 +93,7 @@ def add_work():
         writer=csv.writer(csv_file)
         writer.writerow(new_work)
 
-    return redirect(url_for('index'))
+    return redirect(url_for('works'))
 
 def delete_work():
     pass
